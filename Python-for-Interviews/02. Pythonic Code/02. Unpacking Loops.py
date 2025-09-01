@@ -16,7 +16,6 @@ def best_student(scores: List[Tuple[str, int]]) -> str:
             highScore = score
             highScoreHolder = name
     return highScoreHolder
-    pass
 
 
 # do not modify below this line

@@ -12,13 +12,11 @@ def getWordLength(word):
 def sort_words(words: List[str]) -> List[str]:
     words.sort(key=getWordLength, reverse=True)
     return words
-    pass
 
 
 def sort_numbers(numbers: List[int]) -> List[int]:
     numbers.sort(key=abs)
     return numbers
-    pass
 
 
 # do not modify below this line

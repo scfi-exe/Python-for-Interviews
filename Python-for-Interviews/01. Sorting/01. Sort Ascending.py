@@ -4,19 +4,16 @@ from typing import List
 def sort_words(words: List[str]) -> List[str]:
     words.sort()
     return words
-    pass
 
 
 def sort_numbers(numbers: List[int]) -> List[int]:
     numbers.sort()
     return numbers
-    pass
 
 
 def sort_decimals(numbers: List[float]) -> List[float]:
     numbers.sort()
     return numbers
-    pass
 
 
 # do not modify below this line

@@ -12,14 +12,12 @@ x1, y1 = (
 def sum_3_integers(triplet: List[int]) -> int:
     x, y, z = triplet
     return sum(triplet)
-    pass
 
 
 # takes a list of 3 ints [width, height, depth] and returns the volume of it
 def compute_volume(box_dimensions: Tuple[int, int, int]) -> int:
     length, width, height = box_dimensions
     return length * width * height
-    pass
 
 
 # do not modify below this line
