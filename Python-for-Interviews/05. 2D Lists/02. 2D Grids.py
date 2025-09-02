@@ -23,6 +23,8 @@ from typing import List
 
 
 # optimized code / ideal solution
+# takes a 2d grid of integers r and c, where r is the index of a row and c is the index of a column
+# returns True if the cell atrow r and column c is within bounds of the grid, and False otherwies
 def in_bounds(grid: List[List[int]], r: int, c: int) -> bool:
     if 0 <= r <= len(grid) and 0 <= c <= len(grid[0]):
         return True
