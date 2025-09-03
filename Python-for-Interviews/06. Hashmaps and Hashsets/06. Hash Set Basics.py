@@ -37,13 +37,23 @@ from typing import List, Set
 
 # takes a list of strings -> returns a hash set containing those strings
 def build_hash_set(keys: List[str]) -> Set[str]:
-    pass
+    output = set()
+    for key in keys:
+        output.add(key)
+    return output
 
 
 # takes a hash set and a list of keys --> returns a list of booleans indicating whether each key exists in the hash set
 # the order of booleans in the output list should match the order of keys in the input list
 def check_keys(hash_set: Set[str], keys: List[str]) -> List[bool]:
-    pass
+    for str in hash_set:
+        output = []
+        for key in keys:
+            if key in hash_set:
+                output.append(True)
+            else:
+                output.append(False)
+        return output
 
 
 # do not modify below this line
