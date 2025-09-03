@@ -28,6 +28,8 @@
 # 'a' in my_set #True
 # 'b' in my_set #False
 
+# TIME COMPLEXITY --> Insertion O(1) // Deletion O(1) // Lookup O(1)
+
 ### BEGIN EXERCISE ###
 
 from typing import List, Set
