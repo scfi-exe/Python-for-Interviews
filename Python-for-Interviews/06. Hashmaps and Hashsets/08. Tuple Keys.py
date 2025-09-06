@@ -24,7 +24,13 @@ from typing import List, Set, Tuple
 # takes a 2D grid of integers and returns a set of tuples where each tuple is a pair of the ROW and COLUMN
 # The set should only contain the coordinates of cells that have a value of 1
 def grid_to_set(grid: List[List[int]]) -> Set[Tuple[int, int]]:
-    pass
+    output = set()
+
+    for r in range(len(grid)):
+        for c in range(len(grid[0])):
+            if grid[r][c] == 1:
+                output.add((r, c))
+    return output  # practice this, it was tough for me
 
 
 # do not modify below this line
