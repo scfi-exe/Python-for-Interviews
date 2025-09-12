@@ -30,4 +30,16 @@ sorted_dict.pop("b")  # 2
 # del dict.[key] deletes the value and returns nothing, afaik
 del sorted_dict["c"]  # {}
 
-# BEGIN CHALLENGE
+# LOOKUP: Check if a key exists in a sorted dict
+sorted_dict = SortedDict({"a": 1})
+does_a_exist = "a" in sorted_dict  # True
+does_b_exist = "b" in sorted_dict  # False
+
+# ITERATING: Loop through the sorted dict
+sorted_dict = SortedDict({"a": 1, "b": 2, "c": 3})
+
+for key, value in sorted_dict.items():
+    print(key, value)
+# Notice that we loop through the sorted dictionary using the items() method, which returns a list of key-value pairs.
+# We will iterate over the key-value pairs in sorted order based on the keys. If we only iterated over the keys, but we
+# needed the values as well, we would have to do a lookup for each key, which would be less efficient.
